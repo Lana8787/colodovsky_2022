@@ -1,0 +1,32 @@
+https://www.codewars.com/kata/57216d4bcdd71175d6000560/train/javascript
+function padIt(str,n){
+  let paddStr = str;
+  let i = 1;
+    while (i <= n) {
+      if (i % 2 === 1) {
+        str = `*`+ str;
+    } else {
+        str = str + `*`;
+    }
+      i++;
+    }  
+  return str;
+}
+
+https://www.codewars.com/kata/5721c189cdd71194c1000b9b/train/javascript
+function grabDoll(dolls){
+  const bag=[];
+  const x = "Hello Kitty";
+  const y = "Barbie doll";
+  for (let i=0; i < dolls.length; i++){
+    if(bag.length === 3) {
+      break;
+    }  
+    if (dolls[i] === x || dolls[i] === y){ 
+     bag.push(dolls[i]);
+    } else {
+     continue;
+    }  
+    }
+  return bag;
+}
