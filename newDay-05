@@ -1,0 +1,35 @@
+https://www.codewars.com/kata/is-this-my-tail/train/javascript
+function correctTail(body, tail){
+  
+ const sub = body.substring(body.length - tail.length);
+  
+  if (sub === tail){
+    return true
+  } else {
+    return false
+  }
+ }
+ 
+ https://www.codewars.com/kata/56f6ad906b88de513f000d96/train/javascript
+ function bonusTime(salary, bonus) {
+  let multiply;
+    if (bonus === true){
+      multiply = salary * 10;
+    } else {
+      multiply = salary;
+    }
+  return "\u00A3" + String(multiply);
+}
+
+https://www.codewars.com/kata/5a58d889880385c2f40000aa/train/javascript
+function automorphic(n){
+  const nStr = String(n);
+  const sq = n ** 2;
+  const sqStr = String(sq);
+  
+    if (nStr === sqStr.slice(sqStr.length - nStr.length)) {
+      return "Automorphic";
+    } else {
+      return "Not!!"
+    }
+}
