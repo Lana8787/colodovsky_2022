@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/is-he-gonna-survive/train/javascript
+function hero(bullets, dragons){
+  const numBull = dragons * 2;
+  if (bullets === numBull || bullets > numBull) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+https://www.codewars.com/kata/59441520102eaa25260000bf/train/javascript
+function unusualFive() {
+  const str = `earth`;
+    return str.length;
+}
+
