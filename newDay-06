@@ -14,3 +14,14 @@ function unusualFive() {
     return str.length;
 }
 
+https://www.codewars.com/kata/maximum-multiple/train/javascript
+function maxMultiple(divisor, bound){
+  const x = bound % divisor;
+  for (let n = 1; n <= bound; n++) {
+    if (bound % divisor === x) {
+      return bound - x;
+    } else {
+      return n;
+    }
+  }
+}
