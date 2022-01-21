@@ -1,0 +1,46 @@
+https://www.codewars.com/kata/5722fd3ab7162a3a4500031f/train/javascript
+function whatNumberIsIt(n){
+  if (n === 1.7976931348623157e+308) {
+    return "Input number is Number.MAX_VALUE";
+  } else if (n === 5e-324) {
+    return "Input number is Number.MIN_VALUE";
+  } else if (n > 1.7976931348623157e+308) {
+    return "Input number is Number.POSITIVE_INFINITY";
+  } else if (n < 5e-324) {
+    return "Input number is Number.NEGATIVE_INFINITY";
+  } else if (isNaN(n)) {
+    return "Input number is Number.NaN";
+  } else {
+    return `Input number is ${n}`;
+  }
+  
+}
+
+https://www.codewars.com/kata/57238ceaef9008adc7000603/train/javascript
+function colorOf(r,g,b){
+  r = r.toString(16);
+  g = g.toString(16);
+  b = b.toString(16);
+
+  if (r.length === 1)
+    r = "0" + r;
+  if (g.length === 1)
+    g = "0" + g;
+  if (b.length === 1)
+    b = "0" + b;
+
+  return "#" + r + g + b;
+}
+
+https://www.codewars.com/kata/57256064856584bc47000611/train/javascript
+function howManySmaller(arr,n){
+  let arrLength = arr.length;
+  let count = 0;
+  
+  for (let i = 0; i < arrLength; i++) {
+    if (arr[i].toFixed(2) < n) {
+      count = count + 1;
+    }
+  }
+  return count;
+}
