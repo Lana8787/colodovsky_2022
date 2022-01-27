@@ -1,0 +1,37 @@
+# colodovsky_2022https://www.codewars.com/kata/57277a31e5e51450a4000010/train/javascript
+function firstToLast(str, c) {
+  let first = str.indexOf(c);
+  let last = str.lastIndexOf(c);
+  if (first === -1) {
+    return -1;
+  } else {
+    return last - first;
+  }
+}
+
+https://www.codewars.com/kata/57280481e8118511f7000ffa/train/javascript
+function splitAndMerge(string, separator) {
+  let words = string.split(" ");
+  let newStr = [];
+  for (let i = 0; i < words.length; i++) {
+    newStr.push(words[i].split("").join(separator));
+  }
+  return newStr.join(" ");
+}
+
+https://www.codewars.com/kata/57274562c8dcebe77e001012/train/javascript
+function cutIt(arr) {
+  let min = arr[0].length;
+  for (const minWord of arr) {
+    if (minWord.length < min) {
+      min = minWord.length;
+    }
+  }
+  console.log(min);
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length > min) {
+      arr[i] = arr[i].slice(0, min);
+    }
+  }
+  return arr;
+}
