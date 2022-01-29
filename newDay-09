@@ -27,7 +27,6 @@ function cutIt(arr) {
       min = minWord.length;
     }
   }
-  console.log(min);
   for (let i = 0; i < arr.length; i++) {
     if (arr[i].length > min) {
       arr[i] = arr[i].slice(0, min);
